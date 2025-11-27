@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header-container">
+    <div class="logo-section">
+      <img src="download.jpg" alt="University Logo" class="logo">
+      <h1 class="university-name">COMSATS Islamabad Vehari Campus</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="Home.html" class="active">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="registration.html">Registration</a>
+      <h2 id="dateDisplay"></h2>
+    </nav>
+  </header>
+
+  <!-- Campus Image -->
+  <section class="campus-image">
+    <img src="portal image.jpg" alt="Campus Image" class="campus-photo">
+  </section>
+
+  <!-- Main Introduction -->
+  <main class="main-content">
+    <h2 class="greeting">Welcome to COMSATS University Islamabad, Vehari Campus</h2>
+    <p class="introduction">
+      Your journey to excellence starts here. At COMSATS Vehari, we are dedicated to providing
+      quality education, innovative research opportunities, and a vibrant campus life that prepares
+      students to become leaders of tomorrow. Join us to explore your potential, build lasting
+      connections, and shape a brighter future through knowledge, creativity, and innovation.
+    </p>
+  </main>
+
+  <!-- Achievements Section -->
+  <section class="achievements">
+    <h2>Our Proud Achievements</h2>
+    <p class="lead">
+      At COMSATS University Islamabad, Vehari Campus, we take pride in shaping bright minds,
+      encouraging creativity, and turning ideas into reality. Here's a glimpse of what makes our campus stand out.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Recognized for Academic Excellence</h3>
+        <p>Our campus has earned recognition from the Higher Education Commission (HEC) for quality education, skilled faculty, and a student-centered learning environment.</p>
+      </div>
+
+      <div class="card">
+        <h3>Leading in Research & Innovation</h3>
+        <p>Students and faculty work side by side on research that solves real-world problems — from smart systems to sustainable technologies.</p>
+      </div>
+
+      <div class="card">
+        <h3>Modern Learning Facilities</h3>
+        <p>We’ve built modern labs, digital classrooms, and collaborative spaces that make learning interactive and future-focused.</p>
+      </div>
+
+      <div class="card">
+        <h3>Strong Industry Partnerships</h3>
+        <p>Our students gain real-world exposure through internships and workshops, thanks to collaborations with top tech companies and organizations.</p>
+      </div>
+
+      <div class="card">
+        <h3>Student Success Stories</h3>
+        <p>From winning robotics competitions to launching startups, our students continue to make their mark across Pakistan and beyond.</p>
+      </div>
+
+      <div class="card">
+        <h3>Committed to a Better Future</h3>
+        <p>COMSATS Vehari proudly supports sustainability projects and community initiatives that promote environmental and social responsibility.</p>
+      </div>
+    </div>
+
+    <!-- Videos -->
+    <h2>Achievement Videos</h2>
+    <div class="video-section">
+      <div class="video-card">
+        <video controls autoplay muted loop>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="video-card">
+        <video controls autoplay muted loop>
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="video-card">
+        <video controls autoplay muted loop>
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Societies Section -->
+    <h2>Our Societies</h2>
+    <div class="society-section">
+      <div class="society-card">
+        <h3>💻 Computer Society</h3>
+        <p>Empowering tech enthusiasts through workshops, coding competitions, and innovation events.</p>
+      </div>
+
+      <div class="society-card">
+        <h3>⚽ Sports Society</h3>
+        <p>Encouraging fitness and teamwork through regular tournaments and inter-campus events.</p>
+      </div>
+
+      <div class="society-card">
+        <h3>🎬 Media & Arts Society</h3>
+        <p>Promoting creativity, photography, film, and public speaking among students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <p>&copy; 2025 COMSATS Islamabad Vehari Campus. All rights reserved.</p>
+  </footer>
+
+  <!-- JS for Live Date & Time -->
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const date = now.toLocaleDateString();
+      const time = now.toLocaleTimeString();
+      document.getElementById('dateDisplay').textContent = `${date} | ${time}`;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+</body>
+</html>

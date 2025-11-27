@@ -1,0 +1,285 @@
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: white;
+  padding: 15px 40px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.university-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: yellow;
+}
+
+.nav-links .active {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer-container {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+
+/* Campus Image */
+.campus-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Profile Card */
+.profile-card {
+  width: 200px;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-card h2 {
+  font-size: 22px;
+  margin: 10px 0 5px 0;
+}
+
+.profile-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.profile-card .contact-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.profile-card .contact-info a {
+  color: #003366;
+  text-decoration: none;
+}
+
+/* Greeting & Intro */
+.greeting {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.introduction {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+/* Achievements */
+.achievements {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+.achievements h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.achievements p {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.achievements.list {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* Generic Card */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  color: #30465c;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.video-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.video-card h3 {
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Society Section */
+.society-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.society-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.society-card h3 {
+  color: #006600;
+  margin-bottom: 0.5rem;
+}
+
+.society-card p {
+  color: #555;
+}
+
+/* Date Display */
+#dateDisplay {
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+/* Table Styling */
+.info-table {
+  width: 400px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-table th, .info-table td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.info-table th {
+  background-color: #003366;
+  color: white;
+  text-transform: uppercase;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.info-table tr:hover {
+  background-color: #d9e6f2;
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Universal Hover Effect for Cards */
+.profile-card:hover,
+.card:hover,
+.video-card:hover,
+.society-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  border-color: #0055aa;
+}
